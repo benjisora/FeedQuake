@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Thème classique -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Thème sombre -->
+    <style name="AppThemeBlack" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryBlack</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlack</item>
+        <item name="colorAccent">@color/colorAccentBlack</item>
+        <item name="android:windowBackground">@color/windowBackgroundBlack</item>
+        <item name="android:textColor">@color/defaultTextColorBlack</item>
+        <item name="android:textColorPrimary">@color/defaultTextColorBlack</item>
+        <item name="android:textColorSecondary">@color/defaultTextColorBlack</item>
+        <item name="android:textColorTertiary">@color/defaultTextColorBlack</item>
+        <item name="android:dialogTheme">@style/DialogThemeBlack</item>
+        <item name="android:alertDialogTheme">@style/DialogThemeBlack</item>
+    </style>
+
+    <!-- Theme sombre des boites de dialogue  -->
+    <style name="DialogThemeBlack" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimaryBlack</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlack</item>
+        <item name="colorAccent">@color/colorAccentBlack</item>
+        <item name="android:windowBackground">@color/windowBackgroundBlack</item>
+        <item name="android:textColor">@color/defaultTextColorBlack</item>
+        <item name="android:textColorPrimary">@color/defaultTextColorBlack</item>
+        <item name="android:textColorSecondary">@color/defaultTextColorBlack</item>
+        <item name="android:textColorTertiary">@color/defaultTextColorBlack</item>
+        <item name="android:textColorAlertDialogListItem">@color/defaultTextColorBlack</item>
+    </style>
+
+    <!-- Thème du SplashScreen -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@xml/backgroundsplash</item>
+    </style>
+
+</resources>

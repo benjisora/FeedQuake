@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="prefTitle"
+        android:title="Appearance">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="darkTheme"
+            android:summary="Allows the use of a darker theme (will apply on application's restart)"
+            android:title="Use the application's dark theme" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="prefTitle2"
+        android:title="Feed preferences">
+
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues"
+            android:key="defaultFeedUpdate"
+            android:summary="Choose the default feed's update frequency you want to display"
+            android:title="Choose the feed's update frequency" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="strongEarthquake"
+            android:summary="Filters the feed to show earthquakes whom magnitude is greater than 4.5"
+            android:title="Only show strong earthquakes" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
